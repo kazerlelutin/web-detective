@@ -12,8 +12,7 @@ export function injectTemplate(name) {
       throw new Error(`Template ${name} not found`);
     }
   
-    el.innerHTML = templates[name]; // Assurez-vous que `buttonTemplate` est une chaîne HTML valide.
-  
+    el.innerHTML = templates[name];
     const template = el.querySelector(`#${name}`).content;
     const componentInstance = document.importNode(template, true);
   
