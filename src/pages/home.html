@@ -1,10 +1,22 @@
-<main>
-    <div>Sur la home</div>
-    <button _="on click increment :x then put it into the next <output/>">Click Me</button>
-    <output>--</output>
+<main class="grid grid-cols-2 h-full gap-3 p-2">
 
-    <button _="on click call injectTemplate('button') put it into the next <output/>">
-        INJECT
-    </button>
-    <output></output>
+    <section id="right-section" class="grid grid-rows-[auto_1fr] gap-2 h-full">
+        <header class="card text-center">
+            <p>Istanbul</p>
+            <p>Lundi, 14h00</p>
+        </header>
+        <div class="card">
+            Img, carte (canvas)
+        </div>
+    </section>
+
+    <section id="left-section" class="grid grid-rows-[1fr_auto] gap-2 h-full">
+        <div class="card">Interrogatoire... </div>
+        <footer class="grid grid-cols-4 gap-2">
+            <div class="card">Action</div>
+            <div class="card">Action</div>
+            <div class="card">Action</div>
+            <div class="card">Action</div>
+        </footer>
+    </section>
 </main>

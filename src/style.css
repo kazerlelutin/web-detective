@@ -17,10 +17,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@layer components {
+  .card {
+    border: 6px solid theme('colors.white');
+    box-shadow: 5px 3px 0 theme('colors.black');
+    background: theme('colors.black');
+    position: relative;
+    padding: .5rem;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px solid  theme('colors.black');
+    pointer-events: none;
+
+  }
 }
+
 
 
 button {
@@ -42,3 +60,5 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
